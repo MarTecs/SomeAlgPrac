@@ -2,9 +2,10 @@
 #include<math.h>
 int main() {
 	
-	binary_search(5);
 	
-	int find = generatew_random(); 
+	int find = generate_random(); 
+	
+	printf("随机生成的一个整数为%d\n", find);
 	
 } 
 
