@@ -5,9 +5,6 @@
 #include <time.h> //用到了time函数 
 
 
-
-
-
 int main()
 {  
 	int find = generate_random();
@@ -24,7 +21,6 @@ int main()
 	
   	return 0;
 }
-
 
 
 /*
