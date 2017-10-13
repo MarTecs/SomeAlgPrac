@@ -33,12 +33,13 @@ int main()
 */
 void binary_search(int a[], int find, int inpu) {
 	
-	int low = a[0];
+	int low = 0;
 	int high = sizeof(a) / 4 - 1;
 	
+	int middle = ( low + high ) / 2 + 1;
 	for ( int i = low; i < high; i++ ) {
-		if ( a[i] > a[low]) {
-			
+		if ( find > a[middle]) {
+			printf("²Â´óÁË!");
 		}
 	}
 	
