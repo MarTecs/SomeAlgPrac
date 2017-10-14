@@ -8,17 +8,18 @@
 int main()
 {  
 	int find = generate_random();
-	
    	int a[100];
    	for ( int i = 0; i < 100; i++ ) {
    		a[i] = i;
 	}
-	
+	/*
 	int inpu;
 	while( (input = getchar() ) != null ) {
 		binary_search(a, find, inpu);
 	}
+	*/
 	
+	printf(sizeof(a));
   	return 0;
 }
 
@@ -34,8 +35,14 @@ void binary_search(int a[], int find, int inpu) {
 	
 	int middle = ( low + high ) / 2 + 1;
 	for ( int i = low; i < high; i++ ) {
-		if ( find > a[middle]) {
+		if ( inpu > a[middle]) {
 			printf("猜大了!");
+			high = middle;
+		}else if ( inpu < a[middle] ) {
+			printf("猜小了！");
+			low = middle;
+		}else {
+			printf("猜对了")
 		}
 	}
 	
